@@ -25,9 +25,10 @@ p = figure(
 	title = 'Cars with Top Horsepower',
 	x_axis_label = 'Horsepower',
 	# y_axis_label = 'Y Axis',
-	## No tool displayed
+	## No graph tool displayed
 	# tools=''
-	tools='pan, box_select, zoom_in, zoom_out, save'
+	## Add some graph tools
+	tools='pan, box_select, zoom_in, zoom_out, save, reset'
 )
 
 ## Render glyph
