@@ -12,7 +12,7 @@ output_file('index.html')
 
 ## Add a plot 
 p = figure(
-	title = 'Simple Example', 
+	title = 'Bokeh Line Graph Test', 
 	x_axis_label = 'X Axis', 
 	y_axis_label = 'Y Axis'
 )
