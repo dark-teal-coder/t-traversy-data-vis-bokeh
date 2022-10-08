@@ -26,7 +26,8 @@ p = figure(
 	x_axis_label = 'Horsepower',
 	# y_axis_label = 'Y Axis',
 	## No tool displayed
-	tools=''
+	# tools=''
+	tools='pan, box_select, zoom_in, zoom_out, save'
 )
 
 ## Render glyph
