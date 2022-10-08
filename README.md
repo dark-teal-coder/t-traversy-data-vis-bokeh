@@ -11,4 +11,4 @@
 - `pipenv install bokeh pandas`
 - install bokeh and pandas packages in the virtual env
 - `Pipfile.lock` file created
-- `python main.py` to generate the HTML output file 
+- `python main.py` to generate the HTML output file

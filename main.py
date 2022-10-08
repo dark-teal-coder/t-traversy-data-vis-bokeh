@@ -1,19 +1,19 @@
-## `figure` to create plots 
+## `figure` to create plots
 ## `output_file` to name the HTML file to generate
-## 'show' to generate and output HTML files 
-from bokeh.plotting import figure, output_file, show 
+## 'show' to generate and output HTML files
+from bokeh.plotting import figure, output_file, show
 
-## Data 
+## Data
 x = [1, 2, 3, 4, 5]
 y = [4, 6, 2, 4, 3]
 
 ## Name the output HTML file
 output_file('index.html')
 
-## Add a plot 
+## Add a plot
 p = figure(
-	title = 'Bokeh Line Graph Test', 
-	x_axis_label = 'X Axis', 
+	title = 'Bokeh Line Graph Test',
+	x_axis_label = 'X Axis',
 	y_axis_label = 'Y Axis'
 )
 
