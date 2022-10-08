@@ -1,6 +1,6 @@
 <!-- This is a README file for an online tutorial. -->
 
-# Python Data Visualization of Highest Car Horsepower with Bokeh
+# Python Data Visualization of Top Car Horsepower with Bokeh
 
 ## Repository Description
 
