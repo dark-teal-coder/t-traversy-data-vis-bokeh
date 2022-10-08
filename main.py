@@ -59,7 +59,9 @@ p.hbar(
 	## From 0, light, to 1, dark 
 	fill_alpha=0.9,
 	source=source
-	)
+)
+
+
 
 ## Add Tooltips
 ## When hovering over each bar, car name, price, horsepower and image of the car will be shown
