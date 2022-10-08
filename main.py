@@ -1,8 +1,10 @@
 ## `figure` to create plots
 ## `output_file` to name the HTML file to generate
 ## 'show' to generate and output HTML files
-from turtle import right
-from bokeh.plotting import figure, output_file, show, ColumnDataSource
+import imp
+from bokeh.plotting import figure, output_file, show, save, ColumnDataSource
+## 
+from bokeh.models.tools import HoverTool
 import pandas as pd
 
 ## Data
@@ -50,5 +52,22 @@ p.hbar(
 	source=source
 	)
 
+## Add Tooltips
+## When hovering over each bar, car name, price, horsepower and image of the car will be shown
+hover = HoverTool()
+hover.tooltips = """
+<div>
+	<h3>@Car</h3>
+	<div><strong>Price: </strong>@Price</div>
+	<div><strong>Horsepower: </strong>@Horsepower</div>
+	<div><img src="@Image" alt="Car image" width="200" /></div>
+</div>
+"""
+## Show tools
+p.add_tools(hover)
+
 ## Show the plot
+## Each call will open up a new tab in the browser
 show(p)
+## Open the output HTML file and refresh it after each run
+# save(p)
