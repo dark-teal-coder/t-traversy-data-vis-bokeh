@@ -2,8 +2,11 @@
 ## `output_file` to name the HTML file to generate
 ## 'show' to generate and output HTML files
 from bokeh.plotting import figure, output_file, show, save, ColumnDataSource
-## `HoverTool`` to get hover functionality
+## `HoverTool` to get hover functionality
 from bokeh.models.tools import HoverTool
+## to use different colors for 1 factor 
+from bokeh.transform import factor_cmap
+from bokeh.palettes import Blues8
 import pandas as pd
 
 ## Data
@@ -47,8 +50,14 @@ p.hbar(
 	right='Horsepower',
 	left=0,
 	height=0.4,
-	color='green',
-	fill_alpha=0.5,
+	# color='green',
+	fill_color=factor_cmap(
+		'Car', 
+		palette=Blues8, 
+		factors=cars_list
+	),
+	## From 0, light, to 1, dark 
+	fill_alpha=0.9,
 	source=source
 	)
 
