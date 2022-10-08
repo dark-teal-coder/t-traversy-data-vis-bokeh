@@ -1,12 +1,13 @@
 ## `figure` to create plots
 ## `output_file` to name the HTML file to generate
 ## 'show' to generate and output HTML files
+from sys import platlibdir
 from bokeh.plotting import figure, output_file, show, save, ColumnDataSource
 ## `HoverTool` to get hover functionality
 from bokeh.models.tools import HoverTool
-## to use different colors for 1 factor 
+## to use different colors for 1 factor
 from bokeh.transform import factor_cmap
-from bokeh.palettes import Blues8
+from bokeh.palettes import Blues8, BuGn8 
 import pandas as pd
 
 ## Data
@@ -52,16 +53,23 @@ p.hbar(
 	height=0.4,
 	# color='green',
 	fill_color=factor_cmap(
-		'Car', 
-		palette=Blues8, 
+		'Car',
+		# palette=Blues8,
+		palette=BuGn8,
 		factors=cars_list
 	),
-	## From 0, light, to 1, dark 
+	## From 0, light, to 1, dark
 	fill_alpha=0.9,
-	source=source
+	source=source,
+	## Specify factor for legend
+	legend_field='Car'
 )
 
-
+## Add legend
+p.legend.orientation = 'vertical'
+p.legend.location = 'top_right'
+## Font size of texts in legend
+p.legend.label_text_font_size = '10px'
 
 ## Add Tooltips
 ## When hovering over each bar, car name, price, horsepower and image of the car will be shown
