@@ -1,9 +1,8 @@
 ## `figure` to create plots
 ## `output_file` to name the HTML file to generate
 ## 'show' to generate and output HTML files
-import imp
 from bokeh.plotting import figure, output_file, show, save, ColumnDataSource
-## 
+## `HoverTool`` to get hover functionality
 from bokeh.models.tools import HoverTool
 import pandas as pd
 
@@ -31,6 +30,7 @@ p = figure(
 	plot_height=600,
 	title = 'Cars with Top Horsepower',
 	x_axis_label = 'Horsepower',
+	## Y-axis is now car names
 	# y_axis_label = 'Y Axis',
 	## No graph tool displayed
 	# tools=''
