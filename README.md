@@ -1,6 +1,4 @@
-# t-traversy-data-vis-bokeh
-
-[YouTube](https://www.youtube.com/watch?v=2TR_6VaVSOs)
+# Steps
 
 - install python
 - access to `pip` tool
@@ -12,3 +10,8 @@
 - install bokeh and pandas packages in the virtual env
 - `Pipfile.lock` file created
 - `python main.py` to generate the HTML output file
+
+# References
+
+- [YouTube](https://www.youtube.com/watch?v=2TR_6VaVSOs)
+- [bokeh.palettes documentation](https://docs.bokeh.org/en/latest/docs/reference/palettes.html)
