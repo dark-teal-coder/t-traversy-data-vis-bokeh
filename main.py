@@ -2,7 +2,7 @@
 ## `output_file` to name the HTML file to generate
 ## 'show' to generate and output HTML files
 from turtle import right
-from bokeh.plotting import figure, output_file, show
+from bokeh.plotting import figure, output_file, show, ColumnDataSource
 import pandas as pd
 
 ## Data
@@ -11,15 +11,20 @@ import pandas as pd
 ## Read in CSV data file with Pandas
 df = pd.read_csv('cars.csv')
 
-car = df['Car']
-hp = df['Horsepower']
+## Create ColumnDataSource from DataFrame
+# car = df['Car']
+# hp = df['Horsepower']
+source = ColumnDataSource(df)
 
 ## Name the output HTML file
 output_file('index.html')
 
+## Create a list for `y_range` in `figure()`
+cars_list = source.data['Car'].tolist()
+
 ## Add a plot
 p = figure(
-	y_range=car,
+	y_range=cars_list,
 	plot_width=800,
 	plot_height=600,
 	title = 'Cars with Top Horsepower',
@@ -36,12 +41,13 @@ p = figure(
 # p.line(x, y, legend='Test', line_width=2)
 ## Add a horizontal bar chart
 p.hbar(
-	y=car,
-	right=hp,
+	y='Car',
+	right='Horsepower',
 	left=0,
 	height=0.4,
 	color='green',
-	fill_alpha=0.5
+	fill_alpha=0.5,
+	source=source
 	)
 
 ## Show the plot
