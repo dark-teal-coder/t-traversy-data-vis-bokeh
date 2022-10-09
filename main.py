@@ -8,6 +8,7 @@ from bokeh.models.tools import HoverTool
 ## to use different colors for 1 factor
 from bokeh.transform import factor_cmap
 from bokeh.palettes import Blues8, BuGn8 
+from bokeh.embed import components
 import pandas as pd
 
 ## Data
