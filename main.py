@@ -1,7 +1,6 @@
 ## `figure` to create plots
 ## `output_file` to name the HTML file to generate
 ## 'show' to generate and output HTML files
-from sys import platlibdir
 from bokeh.plotting import figure, output_file, show, save, ColumnDataSource
 ## `HoverTool` to get hover functionality
 from bokeh.models.tools import HoverTool
@@ -91,3 +90,8 @@ p.add_tools(hover)
 show(p)
 ## Open the output HTML file and refresh it after each run
 # save(p)
+
+## Print out `div` and `script`
+script, div = components(p)
+print(div)
+print(script)
