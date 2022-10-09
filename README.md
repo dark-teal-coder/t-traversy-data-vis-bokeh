@@ -4,11 +4,11 @@
 
 ## Repository Description
 
-This repository contains the code for the online course *"SQL"* provided by [SoloLearn](https://www.sololearn.com) and course notes in .md format. Users have to pay Bits or subcribe to become a pro-user in order to unlock practices. But you can find practice problems and solutions here in this repository.
+This repository contains the code for generating an interactive horizontal bar chart displaying the highest horsepower cars in the world on an HTML page.
 
 ## Steps
 
-- Install python to get access to `pip` tool
+- Install Python to get access to `pip` tool
 - Run `pip install pipenv` to get access to `pipenv` command
 - Run `pipenv shell`
 - `Pipfile` file created
