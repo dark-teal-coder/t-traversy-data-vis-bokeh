@@ -91,7 +91,7 @@ show(p)
 ## Open the output HTML file and refresh it after each run
 # save(p)
 
-## Print out `div` and `script`
+## Generate <div> and <script> texts for other uses
 script, div = components(p)
 print(div)
 print(script)
