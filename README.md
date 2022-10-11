@@ -4,7 +4,7 @@
 
 ## Repository Description
 
-This repository contains the code for generating an interactive horizontal bar chart displaying the highest horsepower cars in the world on an HTML page.
+This repository contains the code for generating an interactive horizontal bar chart displaying the highest horsepower cars in the world as an HTML page.
 
 ## Steps
 
@@ -20,3 +20,4 @@ This repository contains the code for generating an interactive horizontal bar c
 
 - [YouTube](https://www.youtube.com/watch?v=2TR_6VaVSOs)
 - [bokeh.palettes documentation](https://docs.bokeh.org/en/latest/docs/reference/palettes.html)
+- [bokeh.embed documentation](https://docs.bokeh.org/en/latest/docs/reference/embed.html)

@@ -4,11 +4,14 @@
 from bokeh.plotting import figure, output_file, show, save, ColumnDataSource
 ## `HoverTool` to get hover functionality
 from bokeh.models.tools import HoverTool
-## to use different colors for 1 factor
+## Apply a client-side CategoricalColorMapper transformation to a ColumnDataSource column
 from bokeh.transform import factor_cmap
-from bokeh.palettes import Blues8, BuGn8 
+## Provide a collection of palettes for color mapping
+from bokeh.palettes import BuGn8, YlGnBu8
+## Return HTML components to embed a Bokeh plot
 from bokeh.embed import components
 import pandas as pd
+
 
 ## Data
 # x = [1, 2, 3, 4, 5]
@@ -52,10 +55,11 @@ p.hbar(
 	left=0,
 	height=0.4,
 	# color='green',
-	fill_color=factor_cmap(
+	## To use different colors for a factor
+	fill_color=factor_cmap( 
 		'Car',
-		# palette=Blues8,
-		palette=BuGn8,
+		# palette=BuGn8,
+		palette=YlGnBu8,
 		factors=cars_list
 	),
 	## From 0, light, to 1, dark
@@ -94,4 +98,4 @@ show(p)
 ## Generate <div> and <script> texts for other uses
 script, div = components(p)
 print(div)
-print(script)
+# print(script)
