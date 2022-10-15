@@ -7,7 +7,7 @@ from bokeh.models.tools import HoverTool
 ## Apply a client-side CategoricalColorMapper transformation to a ColumnDataSource column
 from bokeh.transform import factor_cmap
 ## Provide a collection of palettes for color mapping
-from bokeh.palettes import BuGn8, YlGnBu8
+from bokeh.palettes import YlGnBu8
 ## Return HTML components to embed a Bokeh plot
 from bokeh.embed import components
 import pandas as pd
@@ -36,13 +36,14 @@ p = figure(
 	plot_width=800,
 	plot_height=600,
 	title = 'Cars with Top Horsepower',
-	x_axis_label = 'Horsepower',
+	# x_axis_label = 'X axis',
+	# y_axis_label = 'Y axis',
 	## Y-axis is now car names
-	# y_axis_label = 'Y Axis',
+	x_axis_label = 'Horsepower', 
 	## No graph tool displayed
-	# tools=''
+	# tools='' 
 	## Add some graph tools
-	tools='pan, box_select, zoom_in, zoom_out, save, reset'
+	tools='pan, box_select, zoom_in, zoom_out, save, reset' 
 )
 
 ## Render glyph
@@ -53,12 +54,12 @@ p.hbar(
 	y='Car',
 	right='Horsepower',
 	left=0,
-	height=0.4,
+	## Height of bars
+	height=0.4, 
 	# color='green',
 	## To use different colors for a factor
 	fill_color=factor_cmap( 
 		'Car',
-		# palette=BuGn8,
 		palette=YlGnBu8,
 		factors=cars_list
 	),
@@ -75,9 +76,9 @@ p.legend.location = 'top_right'
 ## Font size of texts in legend
 p.legend.label_text_font_size = '10px'
 
-## Add Tooltips
-## When hovering over each bar, car name, price, horsepower and image of the car will be shown
+## Add tooltips
 hover = HoverTool()
+## When hovering over each bar, car name, price, horsepower and image of the car will be shown
 hover.tooltips = """
 <div>
 	<h3>@Car</h3>
@@ -97,5 +98,11 @@ show(p)
 
 ## Generate <div> and <script> texts for other uses
 script, div = components(p)
-print(div)
+# print(div)
 # print(script)
+f = open("div.txt", "w")
+f.write(div)
+f.close()
+f = open("script.txt", "w")
+f.write(script)
+f.close()
