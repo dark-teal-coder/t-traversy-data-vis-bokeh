@@ -1,13 +1,13 @@
 ## `figure` to create a figure for plotting
 from bokeh.plotting import figure, output_file, show, save, ColumnDataSource
-## To displays tooltips whenever the cursor is over a glyph
-from bokeh.models.tools import HoverTool
 ## To apply a client-side CategoricalColorMapper transformation to a ColumnDataSource column
 from bokeh.transform import factor_cmap
 ## To provide a collection of palettes for color mapping
 from bokeh.palettes import YlGnBu8
 ## To return HTML components to embed a Bokeh plot
 from bokeh.embed import components
+## To displays tooltips whenever the cursor is over a glyph
+from bokeh.models.tools import HoverTool
 import pandas as pd
 
 
