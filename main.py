@@ -1,14 +1,12 @@
-## `figure` to create plots
-## `output_file` to name the HTML file to generate
-## 'show' to generate and output HTML files
+## `figure` to create a figure for plotting
 from bokeh.plotting import figure, output_file, show, save, ColumnDataSource
-## `HoverTool` to get hover functionality
+## To displays tooltips whenever the cursor is over a glyph
 from bokeh.models.tools import HoverTool
-## Apply a client-side CategoricalColorMapper transformation to a ColumnDataSource column
+## To apply a client-side CategoricalColorMapper transformation to a ColumnDataSource column
 from bokeh.transform import factor_cmap
-## Provide a collection of palettes for color mapping
+## To provide a collection of palettes for color mapping
 from bokeh.palettes import YlGnBu8
-## Return HTML components to embed a Bokeh plot
+## To return HTML components to embed a Bokeh plot
 from bokeh.embed import components
 import pandas as pd
 
@@ -76,7 +74,7 @@ p.legend.location = 'top_right'
 ## Font size of texts in legend
 p.legend.label_text_font_size = '10px'
 
-## Add tooltips
+## Add hover tool to display tooltips
 hover = HoverTool()
 ## When hovering over each bar, car name, price, horsepower and image of the car will be shown
 hover.tooltips = """
@@ -90,7 +88,7 @@ hover.tooltips = """
 ## Show tools
 p.add_tools(hover)
 
-## Show the plot
+## Show the plot in HTML format
 ## Each call will open up a new tab in the browser
 show(p)
 ## Open the output HTML file and refresh it after each run
