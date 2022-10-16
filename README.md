@@ -6,7 +6,7 @@
 
 This repository contains the code for generating an interactive horizontal bar chart displaying the highest horsepower cars in the world as an HTML page.
 
-## Steps
+## Steps to Create a Virtual Environment with Pipenv
 
 - Install Python to get access to `pip` tool
 - Run `pip install pipenv` to get access to `pipenv` command
