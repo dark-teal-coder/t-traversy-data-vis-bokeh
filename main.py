@@ -50,6 +50,7 @@ p = figure(
 ## Add a horizontal bar chart
 p.hbar(
 	y='Car',
+	## The x-coordinates of the right edges
 	right='Horsepower',
 	left=0,
 	## Height of bars
