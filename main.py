@@ -9,6 +9,7 @@ from bokeh.embed import components
 ## To displays tooltips whenever the cursor is over a glyph
 from bokeh.models.tools import HoverTool
 import pandas as pd
+import os
 
 
 ## Data
@@ -99,9 +100,12 @@ show(p)
 script, div = components(p)
 # print(div)
 # print(script)
-f = open("div.txt", "w")
+dir = "output"
+if not os.path.exists(dir): 
+	os.makedirs(dir)
+f = open(f"{dir}/div.txt", "w")
 f.write(div)
 f.close()
-f = open("script.txt", "w")
+f = open(f"{dir}/script.txt", "w")
 f.write(script)
 f.close()
