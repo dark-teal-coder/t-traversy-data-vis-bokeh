@@ -16,6 +16,12 @@ This repository contains the code for generating an interactive horizontal bar c
 - `Pipfile.lock` file created
 - Run `python main.py` to generate the HTML output file
 
+## Steps to Remove a Virtual Environment
+
+- Look for `.virtualenvs` folder
+- Remove the entire directory (`pyvenv.cfg` file inside) with the same name as the virtual environment
+- Restart IDE (e.g., Visual Studio Code)
+
 ## References
 
 - [YouTube](https://www.youtube.com/watch?v=2TR_6VaVSOs)
