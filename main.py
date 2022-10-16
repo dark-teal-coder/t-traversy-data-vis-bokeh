@@ -23,8 +23,13 @@ df = pd.read_csv('cars.csv')
 # hp = df['Horsepower']
 source = ColumnDataSource(df)
 
+## Create the output folder if not exist
+dir = "output"
+if not os.path.exists(dir): 
+	os.makedirs(dir)
+
 ## Name the output HTML file
-output_file('index.html')
+output_file(f"{dir}/index.html")
 
 ## Create a list for `y_range` in `figure()`
 cars_list = source.data['Car'].tolist()
@@ -100,9 +105,6 @@ show(p)
 script, div = components(p)
 # print(div)
 # print(script)
-dir = "output"
-if not os.path.exists(dir): 
-	os.makedirs(dir)
 f = open(f"{dir}/div.txt", "w")
 f.write(div)
 f.close()
