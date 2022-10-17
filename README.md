@@ -10,7 +10,7 @@ This repository contains the code for generating an interactive horizontal bar c
 
 - Install Python to get access to `pip` tool
 - Run `pip install pipenv` to get access to `pipenv` command
-- Run `pipenv shell`
+- Run `pipenv shell` to activate the virtual environment
 - `Pipfile` file created
 - Run `pipenv install bokeh pandas` to install the packages in the virtual environment
 - `Pipfile.lock` file created
@@ -18,7 +18,7 @@ This repository contains the code for generating an interactive horizontal bar c
 
 ## Steps to Remove a Virtual Environment
 
-- Look for `.virtualenvs` folder
+- Run `pipenv --venv` to check where the virtual environment folder is located (inside `.virtualenvs`)
 - Remove the entire directory (`pyvenv.cfg` file inside) with the same name as the virtual environment
 - Restart IDE (e.g., Visual Studio Code)
 
