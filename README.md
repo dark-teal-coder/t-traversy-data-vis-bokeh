@@ -10,7 +10,7 @@ This repository contains the code for generating an interactive horizontal bar c
 
 - Install Python to get access to `pip` tool
 - Run `pip install pipenv` to get access to `pipenv` command
-- Run `pipenv shell` to activate the virtual environment
+- Run `pipenv shell` to create or activate the virtual environment
 - `Pipfile` file created
 - Run `pipenv install bokeh pandas` to install the packages in the virtual environment
 - `Pipfile.lock` file created
