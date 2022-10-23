@@ -1,4 +1,4 @@
-<!-- This is a README file for an online tutorial. -->
+<!-- README file for YouTube tutorials -->
 
 # Python Data Visualization of Top Car Horsepower with Bokeh
 
