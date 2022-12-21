@@ -3,6 +3,18 @@
 
 # Python Data Visualization of Top Car Horsepower with Bokeh
 
+## Project
+
+- **Title**: *Python Data Visualization of Top Car Horsepower with Bokeh*
+- **Difficulty**:
+  - [ ] Beginner
+  - [x] Intermediate
+  - [ ] Advanced
+- **Scale**:
+  - [x] Small
+  - [ ] Medium
+  - [ ] Big
+
 ## Repository Description
 
 This repository contains the code for generating an interactive horizontal bar chart displaying the highest horsepower cars in the world as an HTML page (`index.html`).
