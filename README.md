@@ -45,6 +45,6 @@ This repository contains the code for generating an interactive horizontal bar c
 - [bokeh.embed documentation](https://docs.bokeh.org/en/latest/docs/reference/embed.html#bokeh.embed.components)
 - [bokeh.models.tools documentation](https://docs.bokeh.org/en/2.4.2/docs/reference/models/tools.html#hovertool)
 
-<br>
+&nbsp;
 
 *1st Completion Date: Oct 16, 2022*
