@@ -21,6 +21,12 @@ This repository contains the code for generating an interactive horizontal bar c
 
 ## Instructions
 
+### To Get All the Files in the Current Repository
+
+- Click [Code]
+- Click [Download ZIP]
+- Extract the .zip file to the working directory
+
 ### To Create and Use a Virtual Environment with Pipenv
 
 - Install Python to get access to `pip` tool
