@@ -47,4 +47,4 @@ This repository contains the code for generating an interactive horizontal bar c
 
 &nbsp;
 
-*1st Completion Date: Oct 16, 2022*
+*1st Completion Date: Oct 16, 2022*&emsp;
