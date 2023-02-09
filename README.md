@@ -3,6 +3,11 @@
 
 # Python Data Visualization of Top Car Horsepower with Bokeh
 
+## Metadata
+
+- <ins>Project Owner</ins>: [@dark-teal-coder](github.com/dark-teal-coder)
+- <ins>First Published Date</ins>: 2022-10-08
+
 ## Project
 
 - **Title**: *Python Data Visualization of Top Car Horsepower with Bokeh*
