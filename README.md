@@ -32,6 +32,12 @@ This repository contains the code for generating an interactive horizontal bar c
 - Click [Download ZIP]
 - Extract the .zip file to the working directory
 
+### To Fork a Repo and Clone it Locally
+
+To access all of the files, fork this repo and then clone it locally.
+
+For more information, please refer to [Fork a repo](https://docs.github.com/en/get-started/quickstart/fork-a-repo).
+
 ### To Create and Use a Virtual Environment with Pipenv
 
 - Install Python to get access to `pip` tool
