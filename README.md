@@ -56,7 +56,13 @@ For more information, please refer to [Fork a repo](https://docs.github.com/en/g
 - Remove the entire directory (`pyvenv.cfg` file inside) with the same name as the virtual environment
 - Restart IDE
 
-## References
+## Credits 
+
+### Contributors 
+
+- [@dark-teal-coder](github.com/dark-teal-coder)
+
+### References 
 
 - [bokeh.palettes documentation](https://docs.bokeh.org/en/latest/docs/reference/palettes.html)
 - [bokeh.embed documentation](https://docs.bokeh.org/en/latest/docs/reference/embed.html#bokeh.embed.components)
